@@ -8,6 +8,8 @@ if ([string]::IsNullOrWhiteSpace($env:INPUT_MODULEPATH)) {
 } else {
     $Modules = @($env:INPUT_MODULEPATH)
 }
+$PSVersionTable
+Get-ChildItem $Modules
 
 $Modules | ForEach-Object {
     Write-Host "Publishing '$_' to PowerShell Gallery"
