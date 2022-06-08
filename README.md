@@ -12,7 +12,7 @@ For example, if you named your secret `PS_GALLERY_KEY`:
 
 ```
       - name: Publish Module to PowerShell Gallery
-        uses: pcgeek86/publish-powershell-module-action@v20
+        uses: Aschin-Alexander/publish-powershell-module-action@v20
         id: publish-module
         with:
           NuGetApiKey: ${{ secrets.PS_GALLERY_KEY }}
